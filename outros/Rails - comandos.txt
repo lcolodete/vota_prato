@@ -1,0 +1,32 @@
+rails new agenda -d mysql
+cd agenda
+#lista de comandos
+rake -T
+rake db:create:all
+rails generate scaffold Pessoa nome:string nascimento:date altura:float
+rake db:migrate
+rails server
+
+# abre um irb no contexto do projeto atual
+rails console
+
+rake db:drop
+
+# para fazer o drop em um ambiente especifico
+rake db:drop RAILS_ENV=production
+
+rvm list
+rvm 1.9.2
+ruby -v
+rails -v
+
+============
+
+gem install bundler
+cd agenda
+bundle install
+
+==============
+
+# inicia um servidor para olhar a documentacao do rails
+gem server 
