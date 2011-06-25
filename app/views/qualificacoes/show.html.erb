@@ -20,9 +20,14 @@
   <%= @qualificacao.valor_gasto %>
 </p>
 
-<% unless @qualificacao.comentarios.empty? %>
+<h3>Comentarios</h3>
+<div id='comentarios'>
+<% if not @qualificacao.comentarios.empty? %>
    <%= comentarios @qualificacao %>
+<% else %>
+    Nenhum comentario foi cadastrado.
 <% end %>
+</div>
 
 <%= novo_comentario(@qualificacao) %>
 
