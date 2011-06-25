@@ -1,0 +1,6 @@
+puts "ola 1"
+puts "ola 2"
+puts "ola 3"
+puts "ola 4"
+puts "ola 5"
+puts "ola 6"
