@@ -2,7 +2,7 @@ module ApplicationHelper
 
    def menu_principal
       # o mesmo que ["cliente", "qualificacao", "restaurante"]
-      menu = %w(cliente qualificacao restaurante)
+      menu = %w(cliente qualificacao restaurante comentario)
       menu_principal = "<ul>"
       menu.each do |item|
          menu_principal << "<li>" + link_to(item, :controller => item.pluralize) + "</li>"
