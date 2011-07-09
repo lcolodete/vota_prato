@@ -1,0 +1,20 @@
+git status
+git branch
+git branch teste
+git checkout teste
+git branch -D teste
+git checkout -b teste // cria o branch e ja faz o switch para ele
+git add teste.txt
+git commit -m "comentario do commit"
+
+git checkout destino
+git merge destino origem
+
+//merge incremental
+git rebase destino origem
+//resolve o conflito
+git rebase --continue
+
+git log
+
+git diff teste teste2 // git diff branch1 branch2
