@@ -31,3 +31,7 @@ gem 'mysql2'
 # end
 
 gem 'jquery-rails', '>= 0.2.6'
+
+gem 'will_paginate'
+
+gem 'hpricot'

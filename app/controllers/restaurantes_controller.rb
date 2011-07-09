@@ -3,8 +3,9 @@ class RestaurantesController < ApplicationController
    respond_to :html,:xml
 
    def index
-      @restaurantes = Restaurante.order("nome")
-      respond_with @restaurantes
+      
+	@restaurantes = Restaurante.order("nome").paginate :page => params['page'], :per_page => 3
+      	respond_with @restaurantes
    end
 
    def show
